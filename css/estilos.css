@@ -1,0 +1,109 @@
+        @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+        }
+
+        body {
+            background-color: hsl(222, 26%, 31%);
+        }
+
+        main {
+            width: 40%;
+            margin: 2rem auto;
+        }
+
+        .grid-container {
+            border-radius: 2%;
+
+            padding: 1rem;
+            display: grid;
+            background-color: hsl(223, 31%, 20%);
+            min-height: 400px;
+            grid-template-columns: auto auto auto auto;
+            /* Seleccionamos un valor automatico de 3 columnas */
+            grid-gap: 1rem;
+        }
+
+        .grid-container button {
+            border: 0;
+            
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+
+        .num, .signo {
+            background-color: hsl(30, 25%, 89%);
+            color: hsl(221, 14%, 31%);
+            box-shadow: 0 4px 1px #b2a295;
+        }
+
+        .reset {
+            grid-column: 1 / span 2;
+            background-color: #647299;
+            color: hsl(30, 25%, 89%);
+            box-shadow: 0 4px 1px hsl(224deg 28% 35%);
+        }
+
+        .del {
+            background-color: #647299;
+            color: hsl(30, 25%, 89%);
+            box-shadow: 0 4px 1px hsl(224deg 28% 35%);
+        }
+
+        .igual {
+            grid-column: 3 / span 2;            /* Le decimos que el .igual ocupe dos columnas(empieza en 3 / span 2 ocupa dos columnas) */
+            background-color: hsl(6, 63%, 50%);
+            color: hsl(30, 25%, 89%);
+            box-shadow: 0 4px 1px hsl(6deg 70% 34%);
+        }
+
+        .pantalla {
+            background-color: hsl(224, 36%, 15%);
+            min-height: 5rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            color: #ffff;
+            padding: 1rem;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .pantalla-num{
+            font-size: 2.5rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .letras-header{
+            color: #ffff;
+        }
+
+@media screen and (max-width: 992px) {
+    main {
+        width: 60%;
+    }
+
+    .pantalla {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    main {
+        width: 95%;
+    }
+
+    .pantalla {
+        font-size: 2rem;
+    }
+}
+
+
