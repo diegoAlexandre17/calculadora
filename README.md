@@ -11,7 +11,7 @@ Los usuarios deben poder:
 
 ### Links
 
-- Live Site URL: [Blogr](https://diegoalexandre17.github.io/Blogr-Landing-Page/)
+- Visita el sitio: [Calculadora](https://diegoalexandre17.github.io/calculadora/)
 
 ## Mi proceso
 
